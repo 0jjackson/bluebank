@@ -1,0 +1,31 @@
+:root {
+  --bb-brand: #0051ff;
+  --bb-ink: #0b2242;
+}
+body { color: var(--bb-ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #fff; }
+.navbar-brand img { border-radius: 8px; }
+.card-hover { transition: transform .2s, box-shadow .2s; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); }
+.footer-link { color: #cfd8e3; text-decoration: none; }
+.footer-link:hover { color: #fff; text-decoration: underline; }
+.hero .display-5 { letter-spacing: -0.02em; }
+.feature i { font-size: 2rem; }
+.btn-primary { background-color: var(--bb-brand); border-color: var(--bb-brand); }
+.btn-outline-primary { color: var(--bb-brand); border-color: var(--bb-brand); }
+.btn-outline-primary:hover { background: var(--bb-brand); color: #fff; }
+a { text-underline-offset: 2px; }
+a:focus, button:focus { outline: 2px solid var(--bb-brand); outline-offset: 2px; }
+.bg-primary { background-color: var(--bb-brand) !important; }
+.text-primary { color: var(--bb-brand) !important; }
+.hero-img{animation: float 2s ease-in-out infinite;}
+@keyframes float {
+  10%{transform: translateY(0px);}
+  50%{transform: translateY(-15px);}
+  100%{transform: translateY(0px);}
+}
+
+@media screen and (max-width: 760px) {
+  .navbar{
+    padding: 0px 20px;
+  }
+}
